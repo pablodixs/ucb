@@ -9,10 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@icons-pack/react-simple-icons": "^13.13.0",
     "@phosphor-icons/react": "^2.1.10",
+    "calligraph": "^1.4.1",
     "next": "16.2.3",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "simple-icons": "^16.15.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

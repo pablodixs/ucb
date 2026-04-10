@@ -1,6 +1,14 @@
-import { MapPinIcon, PhoneIcon } from '@phosphor-icons/react/dist/ssr'
+import { ArrowUpRightIcon, PhoneIcon } from '@phosphor-icons/react/dist/ssr'
 import Image from 'next/image'
 import Link from 'next/link'
+
+import ubecLogo from '../public/images/logo-ubec.png'
+import {
+    SiFacebook,
+    SiInstagram,
+    SiTiktok,
+    SiYoutube,
+} from '@icons-pack/react-simple-icons'
 
 const FOOTER_LINKS_STYLE =
     'text-white hover:text-[#a6afcd] transition-colors underline-offset-2 hover:underline'
@@ -134,7 +142,13 @@ export function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div className="flex flex-col items-end">
+                    <div className="flex flex-col gap-8 items-center">
+                        <Image
+                            src={'/images/OUVIDORIA_UCB.png'}
+                            alt="MEC - Ministério da Educação"
+                            width={180}
+                            height={37}
+                        />
                         <Image
                             src={'/images/logo-mec.png'}
                             alt="MEC - Ministério da Educação"
@@ -144,18 +158,113 @@ export function Footer() {
                     </div>
                 </div>
             </section>
-            <section className=" py-6">
-                <div className="max-w-7xl mx-auto text-center text-sm">
-                    <Image
-                        src={'/images/logo-ubec.png'}
-                        alt="União Brasileira de Educação Católica"
-                        width={180}
-                        height={37}
-                    />
-                    <p>
-                        &copy; 2023 Universidade Católica. Todos os direitos
-                        reservados.
-                    </p>
+            <section className="py-14">
+                <div className="max-w-7xl mx-auto">
+                    <section className="flex justify-between items-center">
+                        <div className="flex gap-12 text-primary">
+                            <Link
+                                className="hover:opacity-70 transition-all"
+                                href={'#'}
+                            >
+                                <SiInstagram size={28} />
+                            </Link>
+                            <Link
+                                className="hover:opacity-70 transition-all"
+                                href={'#'}
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 50 50"
+                                    width="30px"
+                                    height="30px"
+                                    className="fill-primary"
+                                >
+                                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z" />
+                                </svg>
+                            </Link>
+                            <Link
+                                className="hover:opacity-70 transition-all"
+                                href={'#'}
+                            >
+                                <SiFacebook size={28} />
+                            </Link>
+                            <Link
+                                className="hover:opacity-70 transition-all"
+                                href={'#'}
+                            >
+                                <SiYoutube size={28} />
+                            </Link>
+                            <Link
+                                className="hover:opacity-70 transition-all"
+                                href={'#'}
+                            >
+                                <SiTiktok size={28} />
+                            </Link>
+                        </div>
+                        <div className="flex flex-col items-end">
+                            <Image
+                                src={'/images/full-logo.svg'}
+                                alt="União Brasileira de Educação Católica"
+                                width={180}
+                                height={37}
+                                draggable={false}
+                            />
+                        </div>
+                    </section>
+                    <div className="flex gap-8 justify-center mt-14">
+                        <Link
+                            className="font-medium text-primary flex items-center gap-1"
+                            href={'#'}
+                        >
+                            Portal UBEC <ArrowUpRightIcon />
+                        </Link>
+                        <Link
+                            className="font-medium text-primary flex items-center gap-1"
+                            href={'#'}
+                        >
+                            Machado de Assis - Católica EaD <ArrowUpRightIcon />
+                        </Link>
+                        <Link
+                            className="font-medium text-primary flex items-center gap-1"
+                            href={'#'}
+                        >
+                            Católica EaD
+                            <ArrowUpRightIcon />
+                        </Link>
+                        <Link
+                            className="font-medium text-primary flex items-center gap-1"
+                            href={'#'}
+                        >
+                            FICR <ArrowUpRightIcon />
+                        </Link>
+                        <Link
+                            className="font-medium text-primary flex items-center gap-1"
+                            href={'#'}
+                        >
+                            UNILESTE
+                            <ArrowUpRightIcon />
+                        </Link>
+                        <Link
+                            className="font-medium text-primary flex items-center gap-1"
+                            href={'#'}
+                        >
+                            UNICATÓLICA
+                            <ArrowUpRightIcon />
+                        </Link>
+                    </div>
+                    <div className="flex flex-col items-center mt-14 ">
+                        <Image
+                            src={ubecLogo}
+                            alt="União Brasileira de Educação Católica"
+                            width={180}
+                            height={37}
+                            draggable={false}
+                        />
+                        <p className="text-sm mt-4 text-center">
+                            &copy; 2026 Universidade Católica de Brasília. Todos
+                            os direitos reservados.
+                        </p>
+                    </div>
                 </div>
             </section>
         </footer>

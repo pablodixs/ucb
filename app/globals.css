@@ -1,5 +1,14 @@
 @import 'tailwindcss';
 
+@font-face {
+    font-family: 'Monster Clubhouse Regular';
+    font-style: normal;
+    font-weight: normal;
+    src:
+        local('Monster Clubhouse Regular'),
+        url('/fonts/Monster Clubhouse.woff') format('woff');
+}
+
 :root {
     --background: #ffffff;
     --foreground: #171717;
@@ -11,6 +20,7 @@
     /* --font-sans: var(--font-work-sans); */
     --color-primary: #213683;
     --color-secondary: #008cc5;
+    --font-monster: 'Monster Clubhouse Regular', sans-serif;
 }
 
 /* @media (prefers-color-scheme: dark) {
